@@ -8,7 +8,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
+//@NoArgsConstructor
 //@AllArgsConstructor
 @Entity
 @Table(name = "employees")
@@ -48,6 +48,9 @@ public class Employee {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Employee() {
     }
 
     @Column(name = "first_name")
